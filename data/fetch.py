@@ -1,7 +1,7 @@
 # fetch.py
 import yfinance as yf
 import pandas as pd
-from cache import init_db, save_to_cache, load_from_cache, is_range_cached, log_fetch
+from data.cache import init_db, save_to_cache, load_from_cache, is_range_cached, log_fetch
 
 def get_price_data(ticker: str, start: str, end: str) -> pd.DataFrame:
     init_db()
